@@ -1,0 +1,419 @@
+/* Global styles*/
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+body {
+    margin: 0;
+    background-color: #B2936C;
+}
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+nav,
+footer,
+header {
+    background-color:#0B0D17;
+}
+
+
+/* Navigation */
+
+nav {
+    height: 80px;
+    position: fixed;    
+    width: 100%;
+    color: #FBFBFC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #282B37; 
+}
+
+img.logo {
+    height: 30px;
+    margin: 10px 0;
+    margin-left: 30px;
+}
+
+nav .links {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav button {
+    background-color: #B2936C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.threelines {
+    margin: auto;
+    margin-left: 10px;
+    display: none;    
+}
+
+.threelines img {
+    height: 30px;
+    width: 40px;
+    padding: 10px 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .links a {
+        display: none;
+    }
+
+    nav .threelines {
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav button {
+        display: none;
+    }
+
+}
+
+/* Header */
+
+.title {
+    background-image: url("pictures/background-cat.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    color: white;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.title h1 {
+    max-width: 800px;
+    margin: 60px;
+    margin-bottom: 0;
+}
+
+
+/* Cat Photo Section 1*/
+
+#cat-container {
+    padding-top: 3rem;
+    border-top: 2px solid #282B37;
+
+}
+  
+#cat-container .description {
+    padding: 0 .625rem;
+    margin-bottom: 5rem;
+}
+  
+#cat-container .description h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+  
+#cat-container .description h3 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+  
+.cat-photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cat {
+    width: 250px;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+
+#cat-1 {
+    background-image: url("pictures/cat1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-2 {
+    background-image: url("pictures/cat 2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-3 {
+    background-image: url("pictures/cat3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-4 {
+    background-image: url("pictures/cat4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-5 {
+    background-image: url("pictures/cat5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 320px) {
+    #cat-container .description h2 {
+        font-size: 2.25rem;
+    }
+    
+    #cat-container .description h3 {
+        font-size: 1rem;
+    }
+
+}
+
+/*Cat Fact 1, 2 and 3*/
+
+#cat-facts {
+    padding: 1rem 0;
+}
+  
+#cat-facts .fact {
+    padding: 0 .625rem;
+    margin-bottom: 5rem;
+}
+  
+#cat-facts .fact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display' serif;
+    font-weight: bold;
+    font-style: italic;
+}
+  
+#cat-facts .fact h3 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    #cat-facts .fact h2 {
+        font-size: 2.25rem;
+    }
+    
+    #cat-facts .fact h3 {
+        font-size: 1rem;
+    }
+
+}
+
+/*Had to repeat just to place border at the bottom*/
+
+#cat-facts-3 {
+    padding: 1rem 0;
+    border-bottom: 2px solid #282B37;
+}
+  
+#cat-facts-3 .fact {
+    padding: 0 .625rem;
+    margin-bottom: 5rem;
+}
+  
+#cat-facts-3 .fact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display' serif;
+    font-weight: bold;
+    font-style: italic;
+}
+  
+#cat-facts-3 .fact h3 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    #cat-facts-3 .fact h2 {
+        font-size: 2.25rem;
+    }
+    
+    #cat-facts-3 .fact h3 {
+        font-size: 1rem;
+    }
+
+}
+
+/*Cat Photo Section 2*/
+
+#cat-6 {
+    background-image: url("pictures/cat 6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-7 {
+    background-image: url("pictures/cat 7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-8 {
+    background-image: url("pictures/cat 8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-9 {
+    background-image: url("pictures/cat 9.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-10 {
+    background-image: url("pictures/cat 10.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Cat Photo Section 3*/
+
+#cat-11 {
+    background-image: url("pictures/cat 11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-12 {
+    background-image: url("pictures/cat 12.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-13 {
+    background-image: url("pictures/cat 13.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-14 {
+    background-image: url("pictures/cat 14.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-15 {
+    background-image: url("pictures/cat 15.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* Contacts */
+
+#contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+#contacts img {
+    width: 280px;
+    height: auto;
+    flex-grow: 2;
+}
+
+#contacts .content {
+    width: 280px;
+    padding-right: 40px;
+    margin: 20px 0;
+    flex-grow: 1;
+    color: white;
+}
+
+#contacts .content p {
+    font-family: "Playfair Display", serif;
+}
+
+/* Copyright */
+
+footer {          
+    padding: 5px 30px;
+    border-top: 2px solid #282B37;
+}
+
+footer p,
+footer a {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #797A7F; 
+}
